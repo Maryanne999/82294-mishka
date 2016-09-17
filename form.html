@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Mishka</title>
+		<meta charset="utf-8">
+	</head>
+	<header class="page-header">
+		<div class="logo">
+			<a href="index.html"><img src="http://placehold.it/150x100" alt="Логотип"></a>
+		</div>
+		<button type="button" class="page-header__navbar-toogle"></button>
+		<nav class="navbar">
+			<button type="button" class="navbar__content-close" title="Закрыть"></button>
+			<ul class="menu-nav">
+				<li><a class="menu-nav__item" href="catalog.html">Каталог товара</a></li>
+				<li><a class="menu-nav__item" href="form.html">Вязание на заказ</a></li>
+				<li><a class="menu-nav__item" href="#">Поиск по сайту</a></li>
+				<li><a class="menu-nav__item" href="#">Корзина: пока пуста</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="form-container">
+		<h1 class="form-container__title">Вязание на заказ</h1>
+		<form action="#" method="post" class="form-order">
+			<p class="form-order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+			<div class="form-order__section">
+				<h2 class="form-order__title">Тип</h2>
+				<ul>
+					<li><input class="form-order__type-item" type="radio" name="type-items" id="accessorie" checked><label for="accessorie">Аксессуар для интерьера</label></li>
+					<li><input class="form-order__type-item" type="radio" name="type-items" id="toy"><label for="toy">Детская игрушка</label></li>
+				</ul>
+			</div>
+			<div class="form-order__section">
+				<h2 class="form-order__title">Цвет</h2>
+				<ul>
+					<li><input class="form-order__color-item" type="checkbox" name="type-items" id="white" checked><label for="white">Белый</label></li>
+					<li><input class="form-order__color-item" type="checkbox" name="type-items" id="grey" checked><label for="grey">Серый</label></li>
+					<li><input class="form-order__color-item" type="checkbox" name="type-items" id="tiffani"><label for="tiffani">«Тиффани»</label></li>
+					<li><input class="form-order__color-item" type="checkbox" name="type-items" id="black"><label for="black">Черный</label></li>
+					<li><input class="form-order__color-item" type="checkbox" name="type-items" id="pink"><label for="pink">Розовый</label></li>
+					<li><input class="form-order__color-item" type="checkbox" name="type-items" id="orange"><label for="orange">Оранжевый</label></li>
+				</ul>
+			</div>
+			<div class="form-order__section">
+				<h2 class="form-order__title">Фио</h2>
+				<label>Имя<input type="text" name="first-name" class="form-order__field" placeholder="Введите ваше имя" required></label>
+				<label>Фамилия<input type="text" name="surname" class="form-order__field" placeholder="Укажите фамилию" required></label>
+				<label>Отчество<input type="text" name="patronymic" class="form-order__field" placeholder="Отчество, если желаете" 	required></label>
+			</div>
+			<div class="form-order__section">
+				<label>Тел<input type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" class="form-order__field" placeholder="+7 XXX XX XX" required></label>
+				<label>E-mail<input type="email" name="email" class="form-order__field" placeholder="Ваш Email" required></label>
+				<p>Доп</p>
+				<textarea class="form-order__field" name="wishes" id="wishes-field" rows="6" required>Опишите все ваши пожелания к заказу</textarea>
+				<p>Все поля обязательны для заполнения</p>
+			</div>
+			<input type="submit" value="Отправить заказ">
+		</form>
+	</div>
+	<footer class="page-footer">
+		<section class="footer-social">
+			<a class="footer-social footer-social--bt-in" href="https://www.instagram.com/"></a>
+			<a class="footer-social footer-social--bt-fb" href="https://www.facebook.com/"></a>
+			<a class="footer-social footer-social--bt-tw" href="https://twitter.com/"></a>
+		</section>
+		<section class="footer-copyright">
+			<p>Разработано:</p>
+			<a class="footer-copyright footer-copyright--img-academy" href="https://htmlacademy.ru/"></a>
+		</section>
+	</footer>
+</html>
