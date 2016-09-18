@@ -1,4 +1,4 @@
-# Файл с настройками для редактора.
+﻿# Файл с настройками для редактора.
 #
 # Если вы разрабатываете в редакторе от JetBrains, BBEdit, Coda или SourceLair
 # этот файл уже поддерживается и не нужно производить никаких дополнительных
@@ -13,8 +13,8 @@ root = true
 [*]
 charset = utf-8
 end_of_line = lf
-indent_size = 2
-indent_style = space
+indent_size = 4
+indent_style = tab
 insert_final_newline = true
 trim_trailing_whitespace = true
 
