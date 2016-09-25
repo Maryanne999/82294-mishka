@@ -1,0 +1,32 @@
+.page-intro {
+	.clearfix();
+	background-image: url("img/hero-mobile@1x");
+	background-color: #fafafa;
+	margin-bottom: 32px;
+}
+.page-intro__title {
+	display: block;
+	font-size: 27px;
+	line-height: 30px;
+	font-weight: bold;
+}
+@media @tablet-widths {
+	.page-intro {
+		.container();
+		margin-bottom: 51px;
+	}
+	.page-intro__title {
+		font-size: 43px;
+		line-height: 50px;
+	}
+}
+@media @desktop-widths {
+	.page-intro {
+		.container();
+		margin-bottom: 71px;
+	}
+	.page-intro__title {
+		font-size: 53px;
+		line-height: 57px;
+	}
+}

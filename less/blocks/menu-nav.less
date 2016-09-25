@@ -1,0 +1,30 @@
+.menu-nav {
+	display: flex;
+	flex-direction: column;
+}
+.menu-nav, .menu-nav__item {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+}
+@media @tablet-widths{
+	.menu-nav {
+		.container();
+		flex-direction: row;
+	}
+	.menu-nav__item {
+		float: left;
+		width: 334px;
+	}
+	.menu-nav__item--basket{
+		float: right;
+		width: 263px;
+	}
+	.menu-nav__item--search {
+		width: 81px;
+		float: right;
+	}
+}
