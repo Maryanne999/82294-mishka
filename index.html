@@ -3,27 +3,28 @@
 	<head>
 		<title>Mishka</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="less/style.less">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header class="page-header">
-			<div class="container">
+			<div class="container container__header">
 				<div class="logo">
-					<img src="http://placehold.it/150x79" alt="Логотип">
+					<img src="img/logo-mobile.svg" width="86" height="36" alt="Логотип">
 				</div>
-				<button type="button" class="nav-toogle nav-toogle--close"></button>
-				<nav class="navbar">
+				<nav class="navbar navbar--closed  navbar--opened navbar--nojs">
+				<button type="button" class="nav-toogle">Открыть меню</button>
 					<ul class="menu-nav">
-						<li><a class="menu-nav__item" href="catalog.html">Каталог товара</a></li>
-						<li><a class="menu-nav__item" href="form.html">Вязание на заказ</a></li>
-						<li><a class="menu-nav__item menu-nav__item--search" href="#">Поиск по сайту</a></li>
-						<li><a class="menu-nav__item menu-nav__item--basket" href="#">Корзина: пока пуста</a></li>
+						<li class="menu-nav__item"><a href="catalog.html">Каталог товара</a></li>
+						<li class="menu-nav__item"><a href="form.html">Вязание на заказ</a></li>
+						<li class="menu-nav__item menu-nav__item--search"><a href="#">Поиск по сайту</a></li>
+						<li class="menu-nav__item menu-nav__item--basket"><a  href="#">Корзина: пока пуста</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 		<div class="page-intro">
-			<h1 class="page-intro__title">Милые штуки ручной работы для дома</h1>
+			<h1 class="page-intro__title">Милые штуки ручной<br> работы для дома</h1>
 			<a class="interior-items" href="#">Предметы<br> интерьера</a>
 			<a class="toys" href="#">Детские<br> игрушки</a>
 		</div>
@@ -46,7 +47,7 @@
 						<td class="popular-product__table-value">15см</td>
 					</tr>
 				</table>
-				<img  class="popular-product__img" src="http://placehold.it/260x315" alt="Корзинки">
+				<img  class="popular-product__img" src="img/triple-set-mobile@1x.jpg" alt="Корзинки">
 				<span class="popular-product__price">Цена: 990 руб.</span>
 				<a class="button" href="#">Заказать</a>
 			</div>
@@ -78,8 +79,8 @@
 					<span class="review-slide__user-name">Анастасия Красильникова</span>
 					<span class="review-slide__user-nickname">@misssssiskras</span>
 				</div>
-				<a href="#" class="arrow-prev"></a>
-				<a href="#" class="arrow-next"></a>
+				<a href="#" class="arrow-prev"><img src="img/icon-left-arrow.svg"></a>
+				<a href="#" class="arrow-next"><img src="img/icon-right-arrow.svg"></a>
 				<a href="#" class="button">Написать</a>
 			</div>
 		</section>
@@ -99,7 +100,7 @@
 			</section>
 			<div class="map">
 			</div>
-			<a href="#" class="button">Напишите нам</a>
+			<a href="#" class="button button--write-us">Напишите нам</a>
 			<section class="footer-social">
 				<a class="social-btn social-btn--insta" href="https://www.instagram.com/"></a>
 				<a class="social-btn social-btn--fb" href="https://www.facebook.com/"></a>
@@ -122,5 +123,21 @@
 			</form>
 			</div>
 		</div>
+   		<script>
+			var navMain = document.querySelector('.navbar');
+			var navToggle = document.querySelector('.nav-toggle');
+
+			navMain.classList.remove('navbar--nojs');
+
+			navToggle.addEventListener('click', function() {
+				if (navMain.classList.contains('navbar--closed')) {
+					navMain.classList.remove('navbar--closed');
+					navMain.classList.add('navbar--opened');
+				} else {
+					navMain.classList.add('navbar--closed');
+					navMain.classList.remove('navbar--opened');
+				}
+			});
+		</script>
 	</body>
 </html>

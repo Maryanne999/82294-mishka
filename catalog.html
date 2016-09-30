@@ -3,21 +3,22 @@
 	<head>
 		<title>Mishka</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="less/style.less">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header class="page-header">
-			<div class="container">
+			<div class="container container__header">
 				<div class="logo">
-					<img src="http://placehold.it/150x100" alt="Логотип">
+					<img src="img/logo-mobile.svg" width="86" height="36" alt="Логотип">
 				</div>
-				<button type="button" class="nav-toogle nav-toogle--close"></button>
-				<nav class="navbar">
+				<nav class="navbar navbar--closed  navbar--opened navbar--nojs">
+				<button type="button" class="nav-toogle">Открыть меню</button>
 					<ul class="menu-nav">
-						<li><a class="menu-nav__item" href="catalog.html">Каталог товара</a></li>
-						<li><a class="menu-nav__item" href="form.html">Вязание на заказ</a></li>
-						<li><a class="menu-nav__item menu-nav__item--search" href="#">Поиск по сайту</a></li>
-						<li><a class="menu-nav__item  menu-nav__item--basket" href="#">Корзина: пока пуста</a></li>
+						<li class="menu-nav__item"><a href="catalog.html">Каталог товара</a></li>
+						<li class="menu-nav__item"><a href="form.html">Вязание на заказ</a></li>
+						<li class="menu-nav__item menu-nav__item--search"><a href="#">Поиск по сайту</a></li>
+						<li class="menu-nav__item menu-nav__item--basket"><a  href="#">Корзина: пока пуста</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -28,36 +29,44 @@
 		<section class="catalog">
 			<div class="container">
 				<div class="catalog-card">
-					<a href="#"><img src="http//placehold.it/260x195" alt="Зайчик-попрыгайчик"></a>
-					<h2 class="catalog-card__title"><a href="#">Зайчик-попрыгайчик</a></h2>
-					<p class="catalog-card__info">Рост 30см, вес 200г</p>
-					<span class="catalog-card__price">1200 руб.</span>
-					<a href="#" class="catalog-card__card-link">В корзину</a>
+					<a href="#"><img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
+					<div class="catalog-card__info-wrapper">
+						<h2 class="catalog-card__title"><a href="#">Зайчик-попрыгайчик</a></h2>
+						<p class="catalog-card__info">Рост 30см, вес 200г</p>
+						<span class="catalog-card__price">1200 руб.</span>
+						<a href="#" class="catalog-card__card-link">В корзину</a>
+					</div>
 				</div>
 				<div class="catalog-card">
-					<a href="#"><img src="http//placehold.it/260x195" alt="Корзина для белья"></a>
-					<h2 class="catalog-card__title"><a href="#">Корзина для белья</a></h2>
-					<p class="catalog-card__info">Диаметр15 см, высота 10 см</p>
-					<span class="catalog-card__price">690 руб.</span>
-					<a href="#" class="catalog-card__card-link">В корзину</a>
+					<a href="#"><img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзина для белья"></a>
+					<div class="catalog-card__info-wrapper">
+						<h2 class="catalog-card__title"><a href="#">Корзина для белья</a></h2>
+						<p class="catalog-card__info">Диаметр15 см, высота 10 см</p>
+						<span class="catalog-card__price">690 руб.</span>
+						<a href="#" class="catalog-card__card-link">В корзину</a>
+					</div>
 				</div>
 				<div class="catalog-card">
-					<a href="#"><img src="http//placehold.it/260x195" alt="Корзина для игрушек"></a>
-					<h2 class="catalog-card__title"><a href="#">Большая корзинка для игрушек</a></h2>
-					<p class="catalog-card__info">Диаметр 30см, высота 30см</p>
-					<span class="catalog-card__price">1500 руб.</span>
-					<a href="#" class="catalog-card__card-link">В корзину</a>
+					<a href="#"><img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Корзина для игрушек"></a>
+					<div class="catalog-card__info-wrapper">
+						<h2 class="catalog-card__title"><a href="#">Большая корзинка для игрушек</a></h2>
+						<p class="catalog-card__info">Диаметр 30см, высота 30см</p>
+						<span class="catalog-card__price">1500 руб.</span>
+						<a href="#" class="catalog-card__card-link">В корзину</a>
+					</div>
 				</div>
 			</div>
 		</section>
 		<div class="video">
 			<div class="container">
-				<h2 class="video__title">Процесс производства</h2>
-				<video width="260" height="150" controls preload="metadata" src="#" poster="#"></video>
-				<p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том. как появляются наши товары.</p>
+				<div class="video__wrapper">
+				<h2 class="video__title">Процесс<br> производства</h2>
+				<video width="260" height="150"  preload="metadata" src="#" poster="img/video-mobile@1x.jpg"></video>
+				<p class="video__text">По просьбам наших<br> любимых фолловеров мы<br> сняли для вас подробное<br> видео о том. как появляются<br> наши товары.</p>
+				<a href="form.html" class="button button--catalog-order">Сделать заказ</a>
+				</div>
 			</div>
 		</div>
-		<a href="form.html" class="button">Сделать заказ</a>
 		<footer class="page-footer">
 			<section class="footer-social">
 					<a class="social-btn social-btn--insta" href="https://www.instagram.com/"></a>
@@ -81,5 +90,21 @@
 			</form>
 			</div>
 		</div>
+		<script>
+			var navMain = document.querySelector('.navbar');
+			var navToggle = document.querySelector('.nav-toggle');
+
+			navMain.classList.remove('navbar--nojs');
+
+			navToggle.addEventListener('click', function() {
+				if (navMain.classList.contains('navbar--closed')) {
+					navMain.classList.remove('navbar--closed');
+					navMain.classList.add('navbar--opened');
+				} else {
+					navMain.classList.add('navbar--closed');
+					navMain.classList.remove('navbar--opened');
+				}
+			});
+		</script>
 	</body>
 </html>

@@ -1,12 +1,14 @@
 .navbar {
-	display: flex;
-	width: 260px;
+	position: relative;
+	display: inline-block;
+	float: right;
+	vertical-align: top;
+	width: 320px;
 	min-height: 79px;
+	margin-top: 0;
 }
-@media @tablet-widths {
+@media @mobile-widths-only {
 	.navbar {
-		width: auto;
-		min-height: 88px;
-		margin: 0;
+		width: 50px;
 	}
 }
