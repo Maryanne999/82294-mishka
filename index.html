@@ -8,25 +8,37 @@
 	</head>
 	<body>
 		<header class="page-header">
-			<div class="container container__header">
+			<div class="container container__header container__header--nav-closed container__header--nav-opened container__header--nav-nojs">
 				<div class="logo">
 					<img src="img/logo-mobile.svg" width="86" height="36" alt="Логотип">
 				</div>
-				<nav class="navbar navbar--closed  navbar--opened navbar--nojs">
 				<button type="button" class="nav-toogle">Открыть меню</button>
-					<ul class="menu-nav">
-						<li class="menu-nav__item"><a href="catalog.html">Каталог товара</a></li>
-						<li class="menu-nav__item"><a href="form.html">Вязание на заказ</a></li>
-						<li class="menu-nav__item menu-nav__item--search"><a href="#">Поиск по сайту</a></li>
-						<li class="menu-nav__item menu-nav__item--basket"><a  href="#">Корзина: пока пуста</a></li>
-					</ul>
-				</nav>
 			</div>
+			<nav class="navbar">
+				<ul class="menu-nav">
+					<li class="menu-nav__item"><a href="catalog.html">Каталог товара</a></li>
+					<li class="menu-nav__item"><a href="form.html">Вязание на заказ</a></li>
+					<li class="menu-nav__item menu-nav__item--search"><a href="#">Поиск по сайту</a></li>
+					<li class="menu-nav__item menu-nav__item--basket"><a  href="#">Корзина: пока пуста</a></li>
+				</ul>
+			</nav>
 		</header>
 		<div class="page-intro">
-			<h1 class="page-intro__title">Милые штуки ручной<br> работы для дома</h1>
-			<a class="interior-items" href="#">Предметы<br> интерьера</a>
-			<a class="toys" href="#">Детские<br> игрушки</a>
+			<div class="page-intro__title-wrapper">
+				<h1 class="page-intro__title">Милые&nbsp;штуки ручной работы&nbsp;для&nbsp;дома</h1>
+			</div>
+			<div class="page-intro__product-wrapper">
+					<div class="page-intro__product-link page-intro__product-link--interior">
+						<a  href="#" class="page-intro__product-link--container">
+							<span>Предметы интерьера</span>
+						</a>
+					</div>
+					<div class="page-intro__product-link page-intro__product-link--toys ">
+						<a href="#" class="page-intro__product-link--container">
+							<span>Детские игрушки</span>
+						</a>
+					</div>
+			</div>
 		</div>
 		<section class="popular-product">
 			<div class="container">
@@ -55,26 +67,32 @@
 		<section class="about-us">
 			<div class="container">
 				<h2 class="about-us__title">Коротко о нас:</h2>
-				<ul>
-					<li class="about-us__item about-us__item--ecological">Экологически<br>
+				<ul class="about-us__items-wrapper">
+					<li class="about-us__items about-us__items--img"><img src="img/icon-feature-1.svg" width="32" height="38" alt="Экологично"></li>
+					<li class="about-us__items">Экологически<br>
 					чистые материалы</li>
-					<li class="about-us__item about-us__item--scandinavian">Скандинавский стиль<br>
+					<li class="about-us__items about-us__items--img"><img src="img/icon-feature-3.svg" width="47" height="28" alt="Скандинавский стиль"></li>
+					<li class="about-us__items">Скандинавский стиль<br>
 					по российской цене</li>
-					<li class="about-us__item about-us__item--likes">Увеличивает лайки<br>
+					<li class="about-us__items about-us__items--img"><img src="img/icon-feature-5.svg" width="34" height="28" alt="Лайки"></li>
+					<li class="about-us__items">Увеличивает лайки<br>
 					на фотографиях</li>
-					<li class="about-us__item about-us__item--handmade">Связано вручную с<br>
+					<li class="about-us__items about-us__items--img"><img src="img/icon-feature-2.svg" width="35" height="35" alt="Связано вручную"></li>
+					<li class="about-us__items">Связано вручную с<br>
 					любовью и умилением</li>
-					<li class="about-us__item about-us__item--support">Поддержка отечественного<br>
+					<li class="about-us__items about-us__items--img"><img src="img/icon-feature-4.svg" width="55" height="24" alt="Поддержка производителя"></li>
+					<li class="about-us__items">Поддержка отечественного<br>
 					производителя</li>
-					<li class="about-us__item about-us__item--gift-box">Поставляется в<br>
+					<li class="about-us__items about-us__items--img"><img src="img/icon-feature-6.svg" width="33" height="33" alt="В подарочной упаковке"></li>
+					<li class="about-us__items">Поставляется в<br>
 					подарочной упаковке</li>
 				</ul>
 			</div>
 		</section>
 		<section class="reviews-slider">
 			<div class="container">
+				<h2 class="review-slide__title">Отзывы</h2>
 				<div class="review-slide">
-					<h2 class="review-slide__title">Отзывы</h2>
 					<p class="review-slide__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как  у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
 					<span class="review-slide__user-name">Анастасия Красильникова</span>
 					<span class="review-slide__user-nickname">@misssssiskras</span>
@@ -100,11 +118,15 @@
 			</section>
 			<div class="map">
 			</div>
-			<a href="#" class="button button--write-us">Напишите нам</a>
+			<div class="page-footer__btn-container">
+				<a href="#" class="button">Напишите нам</a>
+			</div>
 			<section class="footer-social">
+				<div class="footer-social__wrapper">
 				<a class="social-btn social-btn--insta" href="https://www.instagram.com/"></a>
 				<a class="social-btn social-btn--fb" href="https://www.facebook.com/"></a>
 				<a class="social-btn social-btn--tw" href="https://twitter.com/"></a>
+				</div>
 			</section>
 			<section class="footer-copyright">
 				<p class="footer-copyright__title">Разработано:</p>
@@ -123,21 +145,21 @@
 			</form>
 			</div>
 		</div>
-   		<script>
-			var navMain = document.querySelector('.navbar');
-			var navToggle = document.querySelector('.nav-toggle');
+<script>
+    var navMain = document.querySelector('.menu-nav');
+    var navToggle = document.querySelector('.nav-toogle');
 
-			navMain.classList.remove('navbar--nojs');
+    navMain.classList.remove('container__header--navbar-nojs');
 
-			navToggle.addEventListener('click', function() {
-				if (navMain.classList.contains('navbar--closed')) {
-					navMain.classList.remove('navbar--closed');
-					navMain.classList.add('navbar--opened');
-				} else {
-					navMain.classList.add('navbar--closed');
-					navMain.classList.remove('navbar--opened');
-				}
-			});
-		</script>
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('container__header--nav-closed')) {
+        navMain.classList.remove('container__header--nav-closed');
+        navMain.classList.add('container__header--nav-opened');
+      } else {
+        navMain.classList.add('container__header--nav-closed');
+        navMain.classList.remove('container__header--nav-opened');
+      }
+    });
+  </script>
 	</body>
 </html>

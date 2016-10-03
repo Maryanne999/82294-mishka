@@ -1,7 +1,7 @@
 .nav-toogle {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 32px;
+	right: 1px;
 	z-index: 2;
 	width: 21px;
 	height: 20px;
@@ -10,7 +10,7 @@
 	border: none;
 	background: #ffffff;
 }
-.navbar--closed .nav-toogle::before {
+.container__header--nav-closed .nav-toogle::before  {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -18,13 +18,12 @@
 	width: 20px;
 	height: 2px;
 	background-color: #000000;
-	box-shadow: 0 8px 0 0 #000000,
-              0 16px 0 0 #000000;
+	box-shadow: 0 6px 0 0 #000000,
+              0 12px 0 0 #000000;
 }
-.navbar--opened .navbar-toogle {
-	top: 0;
+.container__header--nav-opened .nav-toogle {
+	top: 29px;
 	right: 0;
-	left: auto;
 
 	&::before,
 	&::after {
@@ -44,6 +43,6 @@
 		transform: rotate(-45deg);
 	}
 }
-.navbar--nojs .navbar-toogle {
+.container__header--navbar-nojs .nav-toogle {
 	display: none;
 }
