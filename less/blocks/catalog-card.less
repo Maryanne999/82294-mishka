@@ -2,7 +2,11 @@
 	margin-bottom: 30px;
 }
 .catalog-card__info-wrapper {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
 	border: 1px solid #ededed;
 	margin-top: 0;
 	padding: 30px 27px;
@@ -34,8 +38,16 @@
 .catalog-card__price {
 	display: inline-block;
 	vertical-align: top;
-	width: 102px;
+	float: left;
+	width: 80px;
 	font-size: 15px;
 	line-height: 24px;
 	font-weight: bold;
+}
+.catalog-card__card-link {
+	display: inline-block;
+	vertical-align: top;
+	width: 25px;
+	height: 25px;
+	font-size: 0;
 }

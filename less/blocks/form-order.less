@@ -1,5 +1,7 @@
 .form-order {
-	margin: auto;
+	display: flex;
+	flex-direction: column;
+	
 }
 .form-order__title {
 	font-size: 13px;
@@ -8,19 +10,23 @@
 	color: #444444;
 	margin-bottom: 24px;
 }
+.form-order__section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 .form-order__section-title {
 	font-weight: 17px;
 	color: #63d1bb;
 	text-transform: uppercase;
 }
-.form-order__section-title--type {
-	border-bottom: 27px;
-}
-.form-order__section-title--color {
-	border-bottom: 23px;
-}
-.form-order__section-title--name {
-	border-bottom: 37px;
+.form-order__section-title label::before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 198px;
+	height: 1px;
+	color: #62d1ba;
 }
 .form-order__section ul {
 	padding: 0;
@@ -30,22 +36,18 @@
 }
 .form-order__section li {
 	list-style: none;
-	margin-bottom: 22px;
-}
-.form-order__section li:last-child {
-	margin-bottom: 0;
 }
 .form-order__section input[type="radio"] {
 	display: none;
 }
-.form-order__section input[type="radio"] + label {
+.form-order__section--type input[type="radio"] + label {
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: bold;
 	color: #000000;
 	cursor: pointer;
 }
-.form-order__section label::before {
+.form-order__section--type label::before {
 	content: "";
 	display: inline-block;
 	vertical-align: middle;
@@ -61,14 +63,14 @@
 .form-order__section input[type="checkbox"] {
 	display: none;
 }
-.form-order__section input[type="checkbox"] + label {
+.form-order__section--color input[type="checkbox"] + label {
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: bold;
 	color: #000000;
 	cursor: pointer;
 }
-.form-order__section input[type="checkbox"] + label::before {
+.form-order__section--color input[type="checkbox"] + label::before {
 	content: "";
 	display: inline-block;
 	vertical-align: middle;
@@ -81,6 +83,10 @@
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: bold;
+}
+.form-order__section--color input[type="checkbox"]:checked {
+	background-image: url("../../img/icon-tick.svg");
+	background-repeat: no-repeat;
 }
 .form-order__section input[type="text"] {
 	width: 260px;
@@ -104,7 +110,7 @@
 	border-bottom: 2px solid #000000;
 }
 .form-order__section textarea {
-	width: 260px;
+	width: 100%;
 	height: 138px;
 	border: 2px solid #000000;
 	margin-top: 31px;
@@ -128,14 +134,5 @@ input[placeholder] {
 	color: #444444;
 }
 input[type="submit"] {
-	display: block;
-	width: 260px;
-	text-align: center;
-	padding: 18px 45px;
-	text-decoration: none;
-	color: #444444;
 	background: #ffffff;
-	border: 2px #444444 solid;
-	text-transform: uppercase;
-	font-weight: bold;
 }

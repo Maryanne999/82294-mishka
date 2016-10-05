@@ -1,4 +1,4 @@
-.nav-toogle {
+.nav-toggle {
 	position: absolute;
 	top: 32px;
 	right: 1px;
@@ -10,7 +10,7 @@
 	border: none;
 	background: #ffffff;
 }
-.container__header--nav-closed .nav-toogle::before  {
+.page-header--nav-closed .nav-toggle::before  {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -21,7 +21,7 @@
 	box-shadow: 0 6px 0 0 #000000,
               0 12px 0 0 #000000;
 }
-.container__header--nav-opened .nav-toogle {
+.page-header--nav-opened .nav-toggle {
 	top: 29px;
 	right: 0;
 
@@ -43,6 +43,6 @@
 		transform: rotate(-45deg);
 	}
 }
-.container__header--navbar-nojs .nav-toogle {
+.page-header--navbar-nojs .nav-toggle {
 	display: none;
 }
