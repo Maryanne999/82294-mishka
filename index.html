@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<header class="page-header page-header--nav-no-js">
+		<header class="page-header">
 			<div class="container container__header">
 				<div class="logo">
 					<img src="img/logo-mobile.svg" width="86" height="36" alt="Логотип">
@@ -16,7 +16,7 @@
 			</div>
 			<nav class="navbar">
 				<ul class="menu-nav">
-					<li class="menu-nav__item"><a href="catalog.html">Каталог товара</a></li>
+					<li class="menu-nav__item"><a href="catalog.html">Каталог товаров</a></li>
 					<li class="menu-nav__item"><a href="form.html">Вязание на заказ</a></li>
 					<li class="menu-nav__item menu-nav__item--search"><a href="#">Поиск по сайту</a></li>
 					<li class="menu-nav__item menu-nav__item--basket"><a  href="#">Корзина: пока пуста</a></li>
@@ -131,15 +131,15 @@
 				<a class="footer-copyright__link" href="https://htmlacademy.ru/"></a>
 			</section>
 		</footer>
-		<div class="modal-content__active"></div>
-		<div class="modal-content-wrapper">
+		<div class="color-overlay"></div>
+			<div class="modal-content-wrapper">
 			<div class="modal-content">
 			<form action="#" method="get" class="pick-size-form">
-				<h2 class="pick-size-form__title">Добавить в корзину</h2>
+				<h2 class="pick-size-form__title">Добавить<br>в корзину</h2>
 				<p>Выберите размер:</p>
-				<label class="pick-size-form__item" value="S"><input type="radio" name="size-s" value="S" placeholder="S" checked></label>
-				<label class="pick-size-form__item"><input type="radio" name="size-m" value="M" placeholder="M"></label>
-				<label class="pick-size-form__item"><input type="radio" name="size-l" value="L" placeholder="L"></label>
+				<label class="pick-size-form__item"><input type="radio" name="size-s" value="S" checked>S</label>
+				<label class="pick-size-form__item"><input type="radio" name="size-m" value="M">M</label>
+				<label class="pick-size-form__item"><input type="radio" name="size-l" value="L">L</label>
 				<button type="submit" class="button button--add">Добавить</button>
 			</form>
 			</div>

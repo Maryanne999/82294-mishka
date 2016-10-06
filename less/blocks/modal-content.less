@@ -2,13 +2,14 @@
 	display: none;
 	position: absolute;
 	top: 1045px;
-	left: 50%;
-	margin-left: -130px;
-	width: 260px;
+	left: 0;
+	margin: 0 auto;
+	padding: 0 30px;
+	width: 100%;
 	height: 337px;
 	background-color: #ffffff;
 	border: 1px solid #c7c7c7;
-	box-shadow: 5px 0 10px rgba(0 1 1, 0.25);
+	box-shadow: 5px 0 10px rgba(0, 1, 1, 0.25);
 }
 .modal-content__active {
 	display: block;
@@ -16,23 +17,32 @@
 .pick-size-form__title {
 	font-size: 25px;
 	line-height: 30px;
+	margin-top: 20px;
 	font-weight: bold;
 	text-align: center;
+	margin: 0 auto;
+	pad
+	text-transform: uppercase;
 }
 .modal-content p {
 	font-size:15px ;
 	line-height: 30px;
 	text-align: center;
+	margin-top: 10px;
 }
 .modal-content input[type="radio"] {
+	display: none;
+}
+.pick-size-form__item {
 	display: inline-block;
 	vertical-align: top;
-	padding: 13px 0;
+	padding: 17px 34px;
 	width: 82px;
 	margin-right: 7px;
+	box-sizing: border-box;
 	border: 2px solid #ececec;
 }
-.modal-content label:cheked {
+.pick-size-form__item:cheked {
 	border: 2px solid #63d1bb;
 }
 .modal-content input[placeholder] {
