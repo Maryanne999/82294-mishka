@@ -1,0 +1,229 @@
+.page-title--form {
+	margin-bottom:0;
+}
+.form-order {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-top: 0;
+	margin-top: 0;
+}
+.form-order__title {
+	display: block;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #444444;
+	margin:  0;
+	margin-bottom: 22px;
+}
+.form-order__section {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 0;
+	margin-bottom: 12px;
+}
+.form-order__section-title-wrapper {
+	position: relative;
+	display: block;
+	margin-bottom: 19px;
+}
+.form-order__section-title-wrapper--tel {
+	margin-top: 7px;
+	margin-bottom: 0;
+}
+.form-order__section-title-wrapper::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 100%;
+	height: 1px;
+	background-color: #62d1ba;
+	z-index: 0;
+}
+.form-order__section-title {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	padding-right: 22px;
+	z-index: 1;
+	font-size: 17px;
+	color: #63d1bb;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: #ffffff;
+}
+.form-order__section ul {
+	padding: 0;
+	list-style: none;
+	margin: 0;
+}
+.form-order__type-item {
+	position: relative;
+	display: block;
+	width: 159px;
+	min-height: 40px;
+	font-size: 17px;
+	line-height: 18px;
+	padding-top: 16px;
+	padding-left: 62px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: #000000;
+	cursor: pointer;
+}
+.form-order__type-item--last {
+	margin-bottom: 0;
+}
+.form-order__section input[type="radio"] {
+	display: none;
+}
+.form-order__type-item::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 8px;
+	display: inline-block;
+	vertical-align: top;
+	width: 35px;
+	height: 35px;
+	border: 2px solid #444444;
+	border-radius: 50%;
+}
+input[type="radio"]:checked + .form-order__type-item::after {
+	position: absolute;
+	content: "";
+	top: 21px;
+	left: 12px;
+	width: 16px;
+	height: 16px;
+	background-color: #62d1ba;
+	border-radius: 50%;
+}
+.form-order__section input[type="checkbox"] {
+	display: none;
+}
+.form-order__color-item {
+	position: relative;
+	display: block;
+	padding-left: 62px;
+	padding-top: 11px;
+	margin-top: 5px;
+	margin-bottom: 13px;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: bold;
+	min-height: 37px;
+	color: #000000;
+	cursor: pointer;
+}
+.form-order__color-item--last {
+	margin-bottom: 10px;
+}
+.form-order__color-item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 39px;
+	box-sizing: border-box;
+	border: 2px solid #444444;
+	display: inline-block;
+}
+input[type="checkbox"]:checked + .form-order__color-item::after{
+	content: "";
+	position: absolute;
+	top: 11px;
+	left: 8px;
+	width: 23px;
+	height: 17px;
+	background-image: url("../../img/icon-tick.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.form-order__field {
+	display: block;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+.form-order__field--name {
+	margin-top: 13px;
+}
+.form-order__text-field {
+	display: block;
+	width: 260px;
+	height: 48px;
+	border: none;
+	margin-top: 0;
+	padding-top: 0;
+	margin-bottom: 23px;
+	border-bottom: 2px solid #000000;
+}
+.form-order__text-field--last {
+	margin-bottom: 13px;
+}
+.form-order__tel-field {
+	width: 260px;
+	height: 54px;
+	border: none;
+	margin-bottom: 38px;
+	border-bottom: 2px solid #000000;
+}
+.form-order__email-field {
+	width: 260px;
+	height: 54px;
+	border: none;
+	margin-bottom: 32px;
+	border-bottom: 2px solid #000000;
+}
+.form-order__section-title-wrapper--email {
+	margin-bottom: 0;
+}
+.form-order__textarea {
+	width: 100%;
+	box-sizing: border-box;
+	height: 142px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 15px;
+	border: 2px solid #000000;
+	margin-top: 13px;
+	text-align: left;
+}
+input[placeholder]{
+	font-size: 17px;
+	line-height: 18px;
+	color: #cacaca;
+}
+input::-moz-placeholder {
+	font-size: 17px;
+	line-height: 18px;
+	color: #cacaca;
+}
+input:-moz-placeholder {
+	font-size: 17px;
+	line-height: 18px;
+	color: #cacaca;
+}
+input:-ms-input-placeholder {
+	font-size: 17px;
+	line-height: 18px;
+	color: #cacaca;
+}
+.form-order__text {
+	display: block;
+	margin-bottom: 25px;
+	padding: 0;
+	font-size: 13px;
+	color: #444444;
+}
+input[type="submit"] {
+	background: #ffffff;
+	margin-bottom: 12px;
+}
