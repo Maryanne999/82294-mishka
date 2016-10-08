@@ -7,8 +7,8 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<header class="page-header page-header--nav-no-js">
-			<div class="container container__header">
+		<header class="page-header  page-header--nav-nojs">
+			<div class="container container--header">
 				<div class="logo">
 					<a href="index.html"><img src="img/logo-mobile.svg" width="86" height="36" alt="Логотип"></a>
 				</div>
@@ -23,7 +23,7 @@
 				</ul>
 			</nav>
 		</header>
-		<div class="page-title">
+		<div class="page-title page-title--form">
 			<h1 class="page-title__item">Вязание на заказ</h1>
 		</div>
 		<form action="#" method="post" class="form-order">
@@ -33,7 +33,7 @@
 					 <div class="form-order__section-title-wrapper"><h2 class="form-order__section-title">Тип</h2></div>
 					<ul>
 						<li><input type="radio" name="type-items" id="accessorie" checked><label for="accessorie" class="form-order__type-item">Аксессуар для интерьера</label></li>
-						<li><input type="radio" name="type-items" id="toy"><label for="toy" class="form-order__type-item form-order__type-item--toys">Детская игрушка</label></li>
+						<li><input type="radio" name="type-items" id="toy"><label for="toy" class="form-order__type-item form-order__type-item--last">Детская игрушка</label></li>
 					</ul>
 				</div>
 				<div class="form-order__section">
@@ -44,7 +44,7 @@
 						<li><input type="checkbox" id="tiffani"><label for="tiffani"  class="form-order__color-item" >«Тиффани»</label></li>
 						<li><input type="checkbox" id="black"><label for="black"  class="form-order__color-item" >Черный</label></li>
 						<li><input type="checkbox" id="pink"><label for="pink"  class="form-order__color-item" >Розовый</label></li>
-						<li><input type="checkbox" name="type-items" id="orange"><label for="orange"  class="form-order__color-item" >Оранжевый</label></li>
+						<li><input type="checkbox" name="type-items" id="orange"><label for="orange"  class="form-order__color-item form-order__color-item--last" >Оранжевый</label></li>
 					</ul>
 				</div>
 				<div class="form-order__section">
@@ -54,14 +54,14 @@
 					<label for="surname" class="form-order__field">Фамилия:</label>
 					<input class="form-order__text-field" type="text" id="surname" name="surname" placeholder="Укажите фамилию" required>
 					<label for="patronymic" class="form-order__field">Отчество</label>
-					<input class="form-order__text-field" type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете" required>
+					<input class="form-order__text-field form-order__text-field--last" type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете" required>
 				</div>
 				<div class="form-order__section">
-					<div class="form-order__section-title-wrapper form-order__section-title-wrapper--tel"><label for="tel"  class="form-order__section-title">Тел</label></div>
+					<div class="form-order__section-title-wrapper form-order__section-title-wrapper--tel"><label for="tel"  class="form-order__section-title ">Тел</label></div>
 					<input class="form-order__tel-field" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7 XXX XX XX" required>
-					<div class="form-order__section-title-wrapper"><label for="email" class="form-order__section-title">E-mail</label></div>
+					<div class="form-order__section-title-wrapper form-order__section-title-wrapper--email"><label for="email" class="form-order__section-title">E-mail</label></div>
 					<input class="form-order__email-field" type="email" name="email" id="email" placeholder="Ваш Email" required>
-					<div class="form-order__section-title-wrapper"><label for="wishes-field" class="form-order__section-title">Доп</label></div>
+					<div class="form-order__section-title-wrapper form-order__section-title-wrapper--wishes"><label for="wishes-field" class="form-order__section-title">Доп</label></div>
 					<textarea class="form-order__textarea" name="wishes" id="wishes-field" rows="6"  placeholder="Опишите все ваши пожелания к заказу" required></textarea>
 				</div>
 				<p class="form-order__text">Все поля обязательны для заполнения</p>
