@@ -10,7 +10,7 @@
 		<header class="page-header page-header--nav-no-js">
 			<div class="container container__header">
 				<div class="logo">
-					<img src="img/logo-mobile.svg" width="86" height="36" alt="Логотип">
+					<a href="index.html"><img src="img/logo-mobile.svg" width="86" height="36" alt="Логотип"></a>
 				</div>
 				<button type="button" class="nav-toggle">Открыть меню</button>
 			</div>
@@ -33,7 +33,7 @@
 					 <div class="form-order__section-title-wrapper"><h2 class="form-order__section-title">Тип</h2></div>
 					<ul>
 						<li><input type="radio" name="type-items" id="accessorie" checked><label for="accessorie" class="form-order__type-item">Аксессуар для интерьера</label></li>
-						<li><input type="radio" name="type-items" id="toy"><label for="toy" class="form-order__type-item">Детская игрушка</label></li>
+						<li><input type="radio" name="type-items" id="toy"><label for="toy" class="form-order__type-item form-order__type-item--toys">Детская игрушка</label></li>
 					</ul>
 				</div>
 				<div class="form-order__section">
@@ -49,20 +49,20 @@
 				</div>
 				<div class="form-order__section">
 					<div class="form-order__section-title-wrapper"><h2 class="form-order__section-title">Фио:</h2></div>
-					<label for="first-name" class="form-order__field">Имя:</label><br>
-					<input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя" required>
-					<label for="surname" class="form-order__field">Фамилия:</label><br>
-					<input type="text" id="surname" name="surname" placeholder="Укажите фамилию" required>
-					<label for="patronymic" class="form-order__field">Отчество</label><br>
-					<input type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете" required>
+					<label for="first-name" class="form-order__field form-order__field--name">Имя:</label>
+					<input class="form-order__text-field" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя" required>
+					<label for="surname" class="form-order__field">Фамилия:</label>
+					<input class="form-order__text-field" type="text" id="surname" name="surname" placeholder="Укажите фамилию" required>
+					<label for="patronymic" class="form-order__field">Отчество</label>
+					<input class="form-order__text-field" type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете" required>
 				</div>
 				<div class="form-order__section">
-					<div class="form-order__section-title-wrapper"><label for="tel"  class="form-order__section-title">Тел</label></div><br>
-					<input type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7 XXX XX XX" required>
-					<div class="form-order__section-title-wrapper"><label for="email" class="form-order__section-title">E-mail</label></div><br>
-					<input type="email" name="email" id="email" placeholder="Ваш Email" required>
-					<div class="form-order__section-title-wrapper"><label for="wishes-field" class="form-order__section-title">Доп</label></div><br>
-					<textarea name="wishes" id="wishes-field" rows="6"  placeholder="Опишите все ваши пожелания к заказу" required></textarea>
+					<div class="form-order__section-title-wrapper form-order__section-title-wrapper--tel"><label for="tel"  class="form-order__section-title">Тел</label></div>
+					<input class="form-order__tel-field" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7 XXX XX XX" required>
+					<div class="form-order__section-title-wrapper"><label for="email" class="form-order__section-title">E-mail</label></div>
+					<input class="form-order__email-field" type="email" name="email" id="email" placeholder="Ваш Email" required>
+					<div class="form-order__section-title-wrapper"><label for="wishes-field" class="form-order__section-title">Доп</label></div>
+					<textarea class="form-order__textarea" name="wishes" id="wishes-field" rows="6"  placeholder="Опишите все ваши пожелания к заказу" required></textarea>
 				</div>
 				<p class="form-order__text">Все поля обязательны для заполнения</p>
 				<input type="submit" class="button" value="Отправить заказ">
@@ -75,8 +75,10 @@
 					<a class="social-btn social-btn--tw" href="https://twitter.com/"></a>
 			</section>
 			<section class="footer-copyright">
+				<div class="container">
 					<p class="footer-copyright__title">Разработано:</p>
 					<a class="footer-copyright__link" href="https://htmlacademy.ru/"></a>
+				</div>
 			</section>
 		</footer>
 	</body>

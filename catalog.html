@@ -8,9 +8,9 @@
 	</head>
 	<body>
 		<header class="page-header page-header--nav-no-js">
-			<div class="container container__header">
+			<div class="container container--header">
 				<div class="logo">
-					<img src="img/logo-mobile.svg" width="86" height="36" alt="Логотип">
+					<a href="index.html"><img src="img/logo-mobile.svg" width="86" height="36" alt="Логотип"></a>
 				</div>
 				<button type="button" class="nav-toggle">Открыть меню</button>
 			</div>
@@ -24,7 +24,7 @@
 			</nav>
 		</header>
 		<div class="page-title">
-			<h1 class="page-title__item">Каталог товаров</h1>
+			<h1 class="page-title__item page-title__item--catalog">Каталог товаров</h1>
 		</div>
 		<section class="catalog">
 			<div class="container container--catalog">
@@ -83,8 +83,10 @@
 				<a class="social-btn social-btn--tw" href="https://twitter.com/"></a>
 			</section>
 			<section class="footer-copyright">
-				<p class="footer-copyright__title">Разработано:</p>
-				<a class="footer-copyright__link" href="https://htmlacademy.ru/"></a>
+				<div class="container">
+					<p class="footer-copyright__title">Разработано:</p>
+					<a class="footer-copyright__link" href="https://htmlacademy.ru/"></a>
+				</div>
 			</section>
 		</footer>
 		<div class="color-overlay"></div>
@@ -93,10 +95,12 @@
 			<form action="#" method="get" class="pick-size-form">
 				<h2 class="pick-size-form__title">Добавить<br>в корзину</h2>
 				<p>Выберите размер:</p>
-				<label class="pick-size-form__item"><input type="radio" name="size-s" value="S" checked>S</label>
-				<label class="pick-size-form__item"><input type="radio" name="size-m" value="M">M</label>
-				<label class="pick-size-form__item"><input type="radio" name="size-l" value="L">L</label>
+				<div class="container">
+				<input id="size-s" type="radio" name="size" value="S" checked><label for="size-s" class="pick-size-form__item">S</label>
+				<input id="size-m" type="radio" name="size" value="M"><label for="size-m" class="pick-size-form__item">M</label>
+				<input id="size-l" type="radio" name="size" value="L"><label for="size-l" class="pick-size-form__item">L</label>
 				<button type="submit" class="button button--add">Добавить</button>
+				</div>
 			</form>
 			</div>
 		</div>
