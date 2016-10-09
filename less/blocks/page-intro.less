@@ -10,6 +10,9 @@
 	background-color: #fafafa;
 	min-height: 282px;
 }
+.page-intro__info {
+	display: none;
+}
 .page-intro__title {
 	max-width: 247px;
 	margin: 0 auto;
@@ -62,9 +65,31 @@
 	.page-intro {
 		margin-bottom: 51px;
 	}
+	.page-intro__title-wrapper {
+		position: relative;
+		min-height: 626px;
+		background-size: cover;
+		background-position: center;
+	}
 	.page-intro__title {
+		max-width: 500px;
+		padding-top: 153px;
+		margin:  0 auto;
 		font-size: 43px;
 		line-height: 50px;
+	}
+	.page-intro__info {
+		display: block;
+		position: absolute;
+		top: 2px;
+		right: 61px;
+		font-size: 15px;
+		line-height: 24px;
+		color: #444444;
+		z-index: 5;
+	}
+	.page-intro__product-link {
+		.container();
 	}
 }
 @media @desktop-widths {
