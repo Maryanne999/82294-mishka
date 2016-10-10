@@ -23,6 +23,9 @@
 	font-weight: bold;
 	color: #000000;
 }
+.menu-nav__item--info {
+	display: none;
+}
 @media @mobile-widths-only {
 	.page-header--nav-opened .menu-nav {
 	display: flex;
@@ -65,12 +68,12 @@
 	.menu-nav__item--catalog {
 		width: 167px;
 		order: 2;
-		z-index: 8;
+		z-index: 5;
 	}
 	.menu-nav__item--form {
 		width: 167px;
 		order: 3;
-		z-index: 8;
+		z-index: 5;
 	}
 	.menu-nav__item--basket{
 		width: 264px;
@@ -92,5 +95,15 @@
 	}
 	.menu-nav__item--search a {
 		font-size: 0;
+	}
+	.menu-nav__item--info {
+		display: block;
+		position: absolute;
+		right: 50px;
+		bottom: 21px;
+		font-size: 15px;
+		line-height: 24px;
+		color: #444444;
+		z-index: 6;
 	}
 }
