@@ -7,3 +7,28 @@
 	right: 0;
 	background: #ffffff;
 }
+
+@media @mobile-widths-only {
+	.page-header--nav-nojs .navbar {
+	position: static;
+	}
+}
+@media @tablet-widths {
+	.navbar {
+		width: 668px;
+		min-height: 130px;
+		padding: 0 50px;
+		margin: 0 auto;
+		background-color: transparent;
+		top: 0;
+		left: 0;
+	}
+}
+
+@media @desktop-widths {
+	.navbar {
+		width: 1050px;
+		margin: 0 auto;
+		padding: 0 50px;
+	}
+}

@@ -16,10 +16,13 @@
 			</div>
 			<nav class="navbar">
 				<ul class="menu-nav">
-					<li class="menu-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-					<li class="menu-nav__item"><a href="form.html">Вязание на заказ</a></li>
-					<li class="menu-nav__item menu-nav__item--search"><a href="#">Поиск по сайту</a></li>
-					<li class="menu-nav__item menu-nav__item--basket"><a  href="#">Корзина: пока пуста</a></li>
+					<li class="menu-nav__item menu-nav__item--catalog"><a href="catalog.html">Каталог товаров</a></li>
+					<li class="menu-nav__item menu-nav__item--form"><a href="form.html">Вязание на заказ</a></li>
+					<li class="menu-nav__item menu-nav__item--search"><a href="#"><span class="menu-nav__icon-search">Иконка поиска</span>Поиск по сайту</a></li>
+					<li class="menu-nav__item menu-nav__item--basket"><a  href="#"><span class="menu-nav__icon-basket">Иконка корзины</span>Корзина: пока пуста</a></li>
+					<li class="menu-nav__item--new"><a href="#">Новые поступления</a></li>
+					<li class=" menu-nav__item--sale"><a href="#">Распродажа</a></li>
+					<li><p class="menu-nav__item--info">Бесплатная доставка по России</p></li>
 				</ul>
 			</nav>
 		</header>
@@ -44,24 +47,26 @@
 			<div class="container">
 				<h2 class="popular-product__title">Вязаные корзинки</h2>
 				<span class="popular-product__tag">Товар недели</span>
-				<p class="popular-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-				<table class="popular-product__table">
-					<tr class="popular-product__table-row">
-						<td class="popular-product__table-value">Цвет:</td>
-						<td class="popular-product__table-value">«Тиффани»/серый</td>
-					</tr>
-					<tr class="popular-product__table-row">
-						<td class="popular-product__table-value">Диаметр:</td>
+				<div class="popular-product__info-wrapper">
+					<p class="popular-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+					<table class="popular-product__table">
+						<tr class="popular-product__table-row">
+							<td class="popular-product__table-value">Цвет:</td>
+							<td class="popular-product__table-value">«Тиффани»/серый</td>
+						</tr>
+						<tr class="popular-product__table-row">
+							<td class="popular-product__table-value">Диаметр:</td>
 						<td class="popular-product__table-value">25 см</td>
-					</tr>
-					<tr class="popular-product__table-row">
-						<td class="popular-product__table-value">Высота:</td>
-						<td class="popular-product__table-value">15см</td>
-					</tr>
-				</table>
+						</tr>
+						<tr class="popular-product__table-row">
+							<td class="popular-product__table-value">Высота:</td>
+							<td class="popular-product__table-value">15см</td>
+						</tr>
+					</table>
+				</div>
 				<img  class="popular-product__img" src="img/triple-set-mobile@1x.jpg" alt="Корзинки">
 				<span class="popular-product__price">Цена: 990 руб.</span>
-				<a class="button" href="#">Заказать</a>
+				<a class="button button--popular-product" href="#">Заказать</a>
 			</div>
 		</section>
 		<section class="about-us">
@@ -90,16 +95,18 @@
 			</div>
 		</section>
 		<section class="reviews-slider">
-			<div class="container">
+			<div class="container container--slide">
 				<h2 class="review-slide__title">Отзывы</h2>
 				<div class="review-slide">
 					<p class="review-slide__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как  у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
 					<span class="review-slide__user-name">Анастасия Красильникова</span>
 					<span class="review-slide__user-nickname">@misssssiskras</span>
 				</div>
-				<a href="#" class="arrow-prev"><img src="img/icon-left-arrow.svg"></a>
-				<a href="#" class="arrow-next"><img src="img/icon-right-arrow.svg"></a>
-				<a href="#" class="button">Написать</a>
+				<div class="reviews-slider__btn">
+					<a href="#" class="reviews-slider__btn__arrow-prev"><img src="img/icon-left-arrow.svg"></a>
+					<a href="#" class="reviews-slider__btn__arrow-next"><img src="img/icon-right-arrow.svg"></a>
+				</div>
+				<a href="#" class="button button--write">Написать</a>
 			</div>
 		</section>
 		<footer class="page-footer">
@@ -107,31 +114,32 @@
 				<h2 class="contacts__title">Контакты</h2>
 				<table class="contacts__table">
 					<tr class="contacts__table-row">
-						<td class="contacs__table-value">e-mail:</td>
-						<td><a class="contacs__table-value" href="mailto:info@mimimishkashop.ru"> info@mimimishkashop.ru</a></td>
+						<td class="contacts__table-value">e-mail:</td>
+						<td><a class="contacts__table-value" href="mailto:info@mimimishkashop.ru"> info@mimimishkashop.ru</a></td>
 					</tr>
 					<tr class="contacts__table-row">
-						<td class="contacs__table-value">адрес:</td>
-						<td class="contacs__table-value">г.Санкт-Петербург<br>ул.Большая<br>Конюшенная<br>д.19/8, офис 101</td>
+						<td class="contacts__table-value">адрес:</td>
+						<td class="contacts__table-value">г.Санкт-Петербург<br>ул.Большая Конюшенная<br>д.19/8, офис 101</td>
 						</tr>
 				</table>
 			</section>
 			<div class="map">
 			</div>
 			<div class="page-footer__btn-container">
-				<a href="#" class="button">Напишите нам</a>
+				<a href="#" class="button button--write-us">Напишите нам</a>
 			</div>
-			<section class="footer-social">
-				<a class="social-btn social-btn--insta" href="https://www.instagram.com/"></a>
-				<a class="social-btn social-btn--fb" href="https://www.facebook.com/"></a>
-				<a class="social-btn social-btn--tw" href="https://twitter.com/"></a>
-			</section>
-			<section class="footer-copyright">
-				<div class="container">
+			<div class="page-footer__content-wrapper">
+				<div class="page-footer__logo"><img src="img/logo-mobile.svg" width="86" height="36"></div>
+				<section class="footer-social">
+					<a class="social-btn social-btn--insta" href="https://www.instagram.com/"></a>
+					<a class="social-btn social-btn--fb" href="https://www.facebook.com/"></a>
+					<a class="social-btn social-btn--tw" href="https://twitter.com/"></a>
+				</section>
+				<section class="footer-copyright">
 					<p class="footer-copyright__title">Разработано:</p>
 					<a class="footer-copyright__link" href="https://htmlacademy.ru/"></a>
+				</section>
 				</div>
-			</section>
 		</footer>
 		<div class="color-overlay"></div>
 			<div class="modal-content">

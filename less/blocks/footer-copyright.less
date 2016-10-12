@@ -1,9 +1,12 @@
 .footer-copyright {
 	display: block;
 	width: 100%;
+	margin: 0 auto;
+	padding: 0 30px;
 	box-sizing: border-box;
 	background: #f1f1f1;
 	min-height: 80px;
+	text-align: center;
 }
 .footer-copyright__title {
 	display: inline-block;
@@ -24,4 +27,17 @@
 	margin-left: 20px;
 	margin-top: 8px;
 	margin-right: 20px;
+}
+
+@media @tablet-widths {
+	.footer-copyright {
+		display: flex;
+		flex-direction: row;
+		width: 200px;
+		margin: 0;
+		padding: 0;
+	}
+	.footer-copyright a {
+		margin: 0;
+	}
 }

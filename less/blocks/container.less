@@ -16,3 +16,33 @@
 	flex-wrap: wrap;
 	align-content: space-between;
 }
+
+@media @tablet-widths {
+	.container {
+		.container();
+	}
+	.container--header {
+		min-height: 88px;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.container--slide {
+		position: relative;
+		width: 668px;
+		padding: 0 50px;
+	}
+}
+
+@media @desktop-widths {
+	.container {
+		.container();
+	}
+	.container--catalog {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+}
