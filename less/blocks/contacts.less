@@ -14,7 +14,7 @@
 .contacts__table {
 	display: block;
 	width: 100%;
-	min-height: 200px; 
+	min-height: 200px;
 	color: #444444;
 	font-size: 15px;
 	line-height: 30px;
@@ -35,7 +35,7 @@
 	color: #444444;
 	border-bottom: 1px solid #62d1ba;
 }
-.contacts__table-row:nth-child(2) .contacs__table-value {
+.contacts__table-row:nth-child(2) .contacts__table-value {
 	padding-top: 27px;
 }
 
@@ -50,8 +50,48 @@
 		line-height: 50px;
 	}
 	.contacts__table {
+		display: block;
 		font-size: 17px;
 		line-height: 30px;
-		max-height: 80px;
+	}
+	tbody {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		min-height: 75px;
+	}
+	.contacts__table-row {
+		display: flex;
+		flex-direction: row;
+		width: 334px;
+	}
+	.contacts__table-value {
+		display: block;
+	}
+	.contacts__table td:nth-child(1) {
+		width: 55px;
+	}
+	.contacts__table td:nth-child(2){
+	width: 225px;
+}
+	.contacts__table-row:nth-child(2) .contacts__table-value {
+	padding-top: 0;
+	}
+}
+
+@media @desktop-widths {
+	.contacts {
+		float: left;
+		width: 500px;
+		margin-top: 120px;
+		padding: 0;
+	}
+	.contacts__title {
+		font-size: 53px;
+		line-height: 57px;
+	}
+	.contacts__table  {
+		display: block;
 	}
 }

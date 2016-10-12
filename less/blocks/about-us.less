@@ -37,22 +37,30 @@
 	}
 	.about-us__items-wrapper {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		flex-wrap: wrap;
-		align-content: space-between;
+		max-height: 400px;
 	}
-	.about-us__item {
-	font-size: 20px;
-	width: 301px;
-	display: block;
+	.about-us__items {
+		font-size: 20px;
+		width: 334px;
+	}
+	.about-us__items--img img {
+		width: auto;
 	}
 }
 @media @desktop-widths {
 	.about-us {
-	margin-bottom: 86px;
+		padding-top: 30px;
+		margin-bottom: 86px;
 	}
 	.about-us__title {
-	font-size: 53px;
-	line-height: 57px;
+		font-size: 53px;
+		line-height: 57px;
+		margin-left: 170px;
+		margin-bottom: 55px;
+	}
+	.about-us__items-wrapper {
+		margin-left: 170px;
 	}
 }

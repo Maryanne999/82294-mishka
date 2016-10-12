@@ -6,3 +6,34 @@
 	.container();
 	margin-bottom: 39px;
 }
+.page-footer__logo {
+	display: none;
+}
+.page-footer__content-wrapper {
+	width: 100%;
+	background-color: #f1f1f1;
+}
+
+@media @tablet-widths {
+	.page-footer__logo  {
+		display: block;
+		width: 167px;
+	}
+	.page-footer__content-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		min-height: 143px;
+		background-color: #f1f1f1;
+	}
+}
+@media @desktop-widths {
+	.page-footer {
+		.clearfix();
+		width: 1050px;
+		margin: 0 auto;
+		padding: 0 50px;
+	}
+}
